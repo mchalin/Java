@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class HolaMundo {
-
+    
     public static void main(String[] args) {
         /*
         //Un clasico
@@ -200,7 +200,7 @@ public class HolaMundo {
         } else {
             System.out.println("Es un número impar.");
         }
-         */
+        
         int varNum1 = 5, varNum2 = 2;
         int varNum3 = varNum1 + 6 - varNum2;
         System.out.println("varNum3 = " + varNum3);
@@ -216,6 +216,108 @@ public class HolaMundo {
         System.out.println("varNum1 = " + varNum1);
         varNum1 %= 2;
         System.out.println("varNum1 = " + varNum1);
+        
+        // operadores unarios, cambio de signo
+        var varA = 7;
+        var varB = -varA;
+        System.out.println("varA = " + varA);
+        System.out.println("varB = " + varB); // El resultado es negativo
+        // Operador de negacion
+        var varC = true;
+        var varD = !varC;
+        System.out.println("varC = " + varC);
+        System.out.println("varD = " + varD); // Invierte el valor de la variable booleana
+        // Operadores unarios de incremento: PreIncremento
+        var varE = 9;
+        var varF = ++varE; // Simbolo antes de la variable, va a modificar el valor de varE
+        // Se incrementa la variable y luego se utiliza su valor
+        System.out.println("varE = " + varE);
+        System.out.println("varF = " + varF);
+        // Operadores unarios de incremento: PostIncremento
+        var varG = 3;
+        var varH = varG++; // Simbolo luego de la variable, va a modificar el valor luego de que varH la absorba
+        System.out.println("varG = " + varG);
+        System.out.println("varH = " + varH);
+        // Operadores Unarios de decremento - PreDecremento
+        var varI = 4;
+        var varJ = --varI;
+        System.out.println("varI = " + varI);
+        System.out.println("varJ = " + varJ); // Modifica la variable antes de utilizarla 
+        //Operadores unarios de decremento - PostDecremento
+        var varK = 5;
+        var varL = varK--; //Modifica la variable luego de utilizarla
+        System.out.println("varK = " + varK);
+        System.out.println("varL = " + varL);
+        
+        // Operadores de igualdad y relacionales
+        var aNum = 5;
+        var bNum = 4;
+        var cNum = aNum == bNum;
+        System.out.println("cNum = " + cNum);
 
+        var dNum = aNum != bNum;
+        System.out.println("dNum = " + dNum);
+
+        var cadenaA = "hola";
+        var cadenaB = "chauu";
+        var cVar = cadenaA == cadenaB;
+        System.out.println("cVar = " + cVar);
+
+        //Forma correcta de comprobar objetos tipo Sting
+        var fVar = cadenaA.equals(cadenaB);
+        System.out.println("fVar = " + fVar);
+
+        var gVar = aNum > bNum; // Se puede utilizar cualquier operador logico! 
+        System.out.println("gVar = " + gVar);
+        
+        if (aNum % 2 == 0) {
+            System.out.println("El nro aNum es par");
+        } else {
+            System.out.println("El nro aNum es impar");
+        }
+        
+        var edad = 10;
+        var adulto = 18;
+        
+        if (edad >= adulto) {
+            System.out.println("Es mayor de edad! ");
+        } else {
+            System.out.println("Es menor de edad");
+        }
+       
+        var valorA = 15;
+        var valorMinimo = 0;
+        var valorMaximo = 10;
+        var respuesta = valorA >= 0 && valorA <= 10;
+        
+        if (respuesta) {
+            System.out.println("Esta dentro del rango establecido");
+        } else { 
+            System.out.println("Esta fuera del rango establecido");
+        }
+        
+        var vacaciones = false;
+        var diaLibre = true;
+        
+        if (diaLibre || vacaciones) {
+            System.out.println("El padre puede asistir al juego de su hijo");
+        } else {
+            System.out.println("El padre no puede asistir al juego de su hijo");
+        }
+        
+        // Operador ternario
+        var resultadoT = (5 > 8) ? "Verdadero" : "Falso";
+        System.out.println("resultadoT = " + resultadoT);
+        
+        var numeroT = 7;
+        resultadoT = (numeroT % 2 == 0) ? "Par" : "Impar";
+        System.out.println("resultadoT = " + resultadoT);
+         */
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--;
+        System.out.println("z = " + z);
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
     }
 }
