@@ -22,12 +22,27 @@ public class EjercicioWhile01 {
             System.out.println("contador = " + contador);
             contador++;
         } while (contador < 3);
-
+        //Etiquetas (Labels)
+        
         // Ciclo For
-        System.out.println("\nCiclo for:");
-        for (int i = 0; i < 3; i++) {
-            System.out.println("El valor de i es: " + i);
+        System.out.println("\nCiclo for (con break):");
+        inicio: 
+        for (int i = 0; i < 15; i++) {
+            //System.out.println("El valor de i es: " + i);
+            if (i % 2 == 0) {
+                System.out.println("El nro " + i + " es par");
+                break inicio; // Rompe el bucle
+            }
         }
         
+        // Ciclo For (break y continue)
+        System.out.println("\nCiclo for (con continue):");
+        inicio:
+        for (int i = 0; i < 8; i++) {
+            if (i % 2 != 0) {
+                continue inicio; //Continua a la siguiente itereación
+            }
+            System.out.println("El nro " + i + " es par");
+        }
     }
 }
