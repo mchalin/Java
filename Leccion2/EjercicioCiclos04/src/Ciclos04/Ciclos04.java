@@ -15,15 +15,15 @@ public class Ciclos04 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int contador = 1, numero;
-        System.out.print("Digite un número: ");
+        System.out.print("Ingrese un número: ");
         numero = Integer.parseInt(entrada.nextLine());
 
         while (numero >= 0) {
-            System.out.print("Digite otro número: ");
+            System.out.print("Ingrese otro número: ");
             numero = Integer.parseInt(entrada.nextLine());
             contador++;
         }
-        System.out.println("Se termina el programa por haber ingresado un número negativo. \nUd ingresó "+contador+" números mientras duró la ejecución.");
+        System.out.println("Se termina el programa por haber ingresado un número negativo. \nUd ingresó " + contador + " números mientras duró la ejecución.");
     }
 
 }
