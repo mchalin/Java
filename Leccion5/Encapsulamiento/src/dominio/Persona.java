@@ -1,9 +1,5 @@
 package dominio;
 
-/**
- *
- * @author Maxi
- */
 public class Persona {
    
     //Atributos
@@ -42,5 +38,15 @@ public class Persona {
     public void setEliminado(boolean eliminado) {
         this.eliminado = eliminado;
     }
+
+    @Override
+    public String toString() { // Conviernte en una cadena cada atributo
+        return "Persona{" + 
+                "nombre=" + nombre + 
+                ", sueldo=" + sueldo + 
+                ", eliminado=" + eliminado + 
+                '}';
+    }
+    
 
 }

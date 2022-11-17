@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>450</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
+-idEmpleado: int
+-sueldo: double
+--
++getIdEmpleado() int
++getSueldo() double
++setSueldo(double): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>40</y>
+      <w>210</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-nombre: String
+-genero: char
+-edad: int
+-direccion: String
+--
++getNombre() String
++setNombre(String): void
++getGenero() char
++setGenero(char): void
++getEdad() int
++setEdad(int): void
++getDireccion() str
++setDireccion(String): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>450</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Cliente&gt;&gt;
+--
+-idCliente: int
+-fechaRegistro: Date
+-vip: boolean
+--
++getIdCliente() int
++getFechaRegistro() Date
++setFechaRegistro(Date): void
++idVip() boolean
++setVip(boolean): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>270</y>
+      <w>300</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>280.0;180.0;280.0;130.0;10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>270</y>
+      <w>260</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;130.0;240.0;130.0;240.0;10.0</additional_attributes>
+  </element>
+</diagram>
